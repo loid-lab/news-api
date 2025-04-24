@@ -26,8 +26,8 @@ src/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/news-api-app.git
-cd news-api-app
+git clone https://github.com/loid-lab/news-api.git
+cd news-api
 ```
 
 ### 2. Install dependencies
@@ -38,12 +38,12 @@ npm install
 ### 3. Add your API key
 Create a `.env` file in the root directory and add your NewsAPI key:
 ```
-VITE_NEWS_API_KEY=your_api_key_here
+NEWS_API_KEY=your_api_key_here
 ```
 
 Then, in `App.tsx`, make sure you're using:
 ```ts
-const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`);
+const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${import.meta.env.NEWS_API_KEY}`);
 ```
 
 ### 4. Run the development server
