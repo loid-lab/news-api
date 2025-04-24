@@ -22,7 +22,7 @@ export default function App() {
       setLoading(true);
       const res = await fetch(
         `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
-          process.env.VITE_NEWS_API_KEY
+          import.meta.env.VITE_NEWS_API_KEY
         }`
       );
       if (!res.ok) throw new Error(`HTTP error ${res.status}`);

@@ -43,7 +43,7 @@ VITE_NEWS_API_KEY=your_api_key_here
 
 Then, in `App.tsx`, make sure you're using:
 ```ts
-const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.VITE_NEWS_API_KEY}`);
+const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`);
 ```
 
 ### 4. Run the development server
