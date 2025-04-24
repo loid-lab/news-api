@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import NewsCard from "./NewsCard";
+import NewsCard from "./components/NewsCard";
 
 type News = {
   title: string;
